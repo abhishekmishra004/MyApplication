@@ -1,7 +1,11 @@
 package com.android.myapplication.Model;
 
 public class HomeModel {
-    String title,Subtitle,Content,Url;
+
+    String title;
+    String Subtitle;
+    String Content;
+    String Url;
 
     public String getTitle() {
         return title;

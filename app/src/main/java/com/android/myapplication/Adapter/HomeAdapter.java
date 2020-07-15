@@ -50,8 +50,8 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyViewHolder> 
         int radius = 5;
         Picasso.get()
                 .load(homeModels.get(i).getUrl())
-                .fit()        // to centerCrop, you have to do either resize() or fit()
-                .centerCrop() // to remove any possible white areas
+                .fit()
+                .centerCrop()
                 .transform(new RoundCornersTransform(radius))
                 .into(myViewHolder.homeImage);
         final int position = i;
